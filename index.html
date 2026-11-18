@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#100e0c">
+  <meta name="description" content="Bistro 47 — современная кухня, бар и уютная атмосфера в центре города.">
+  <title>Bistro 47 — современная кухня и атмосфера</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.35.0/dist/tabler-icons.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Bistro 47, на главную">Bistro 47</a>
+      <button class="mobile-toggle" type="button" aria-controls="primary-nav" aria-expanded="false" aria-label="Открыть меню"><i class="ti ti-menu-2" aria-hidden="true"></i></button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Основная навигация">
+        <a href="#menu">Меню</a><a href="#about">О нас</a><a href="#gallery">Галерея</a><a href="#contacts">Контакты</a>
+      </nav>
+      <button class="button button-outline header-book" type="button" data-open-booking>Забронировать стол</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero-image" src="assets/hero.jpg" alt="Тёплый свет, сервированный стол и бар Bistro 47">
+      <div class="hero-shade"></div>
+      <div class="container hero-content">
+        <h1 id="hero-title">Современная кухня<br>и атмосфера</h1>
+        <p>Ресторан и бар в центре города.<br>Еда, напитки и особая атмосфера.</p>
+        <div class="hero-actions">
+          <button class="button button-light" type="button" data-open-booking>Забронировать стол <i class="ti ti-arrow-up-right" aria-hidden="true"></i></button>
+          <a class="button button-outline" href="#menu">Смотреть меню</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="highlights" aria-label="Особенности Bistro 47">
+      <div class="container highlights-grid">
+        <div class="highlight"><i class="ti ti-chef-hat" aria-hidden="true"></i><span>Авторская<br>кухня</span></div>
+        <div class="highlight"><i class="ti ti-glass-cocktail" aria-hidden="true"></i><span>Барная<br>карта</span></div>
+        <div class="highlight"><i class="ti ti-calendar-week" aria-hidden="true"></i><span>Уютная<br>атмосфера</span></div>
+        <div class="highlight"><i class="ti ti-map-pin" aria-hidden="true"></i><span>Удобное<br>расположение</span></div>
+      </div>
+    </section>
+
+    <section class="section menu-section" id="menu" aria-labelledby="menu-title">
+      <div class="container menu-layout">
+        <div class="section-intro">
+          <h2 id="menu-title">Меню</h2>
+          <p>Сезонные блюда, авторские позиции и любимая классика.</p>
+          <button class="text-link" type="button" data-open-menu>Смотреть меню <i class="ti ti-arrow-up-right" aria-hidden="true"></i></button>
+        </div>
+        <div class="menu-cards">
+          <button class="image-card" type="button" data-menu-category="main" aria-label="Открыть основные блюда"><img src="assets/steak.jpg" alt="Стейк с зеленью на тёмной тарелке" loading="lazy"><span>Основные блюда</span></button>
+          <button class="image-card" type="button" data-menu-category="pasta" aria-label="Открыть пасту"><img src="assets/pasta.jpg" alt="Паста с трюфелем" loading="lazy"><span>Паста</span></button>
+          <button class="image-card" type="button" data-menu-category="dessert" aria-label="Открыть десерты"><img src="assets/dessert.jpg" alt="Шоколадный десерт с ягодами" loading="lazy"><span>Десерты</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <img src="assets/interior.jpg" alt="Уютный зал Bistro 47 с деревом и тёплым светом" loading="lazy">
+        <div class="about-copy"><span class="eyebrow">О нас</span><h2 id="about-title">Bistro 47</h2><p>Современный ресторан и бар, где сочетаются качественная кухня, продуманная барная карта и комфортная атмосфера.</p><a class="button button-outline" href="#contacts">Узнать больше <i class="ti ti-arrow-up-right" aria-hidden="true"></i></a></div>
+      </div>
+    </section>
+
+    <section class="section gallery-section" id="gallery" aria-labelledby="gallery-title">
+      <div class="container"><div class="section-heading"><h2 id="gallery-title">Галерея</h2><button class="text-link" type="button" data-open-gallery="0">Смотреть все фото <i class="ti ti-arrow-up-right" aria-hidden="true"></i></button></div>
+        <div class="gallery-grid">
+          <button type="button" data-open-gallery="0" aria-label="Посмотреть бар"><img src="assets/bar.jpg" alt="Подсвеченные полки бара" loading="lazy"></button>
+          <button type="button" data-open-gallery="1" aria-label="Посмотреть блюдо"><img src="assets/salmon.jpg" alt="Филе лосося с зеленью" loading="lazy"></button>
+          <button type="button" data-open-gallery="2" aria-label="Посмотреть интерьер"><img src="assets/interior.jpg" alt="Интерьер ресторана" loading="lazy"></button>
+          <button type="button" data-open-gallery="3" aria-label="Посмотреть коктейль"><img src="assets/cocktail.jpg" alt="Авторский коктейль" loading="lazy"></button>
+          <button type="button" data-open-gallery="4" aria-label="Посмотреть десерт"><img src="assets/lights.jpg" alt="Стеклянные светильники ресторана" loading="lazy"></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="booking-banner" id="booking" aria-labelledby="booking-title">
+      <img src="assets/cocktail.jpg" alt="Коктейль с ягодами в баре" loading="lazy">
+      <div class="container booking-inner"><div class="booking-copy"><h2 id="booking-title">Забронируйте стол</h2><p>Планируете ужин, встречу или особый вечер?<br>Забронируйте стол заранее.</p><button class="button button-light" type="button" data-open-booking>Забронировать стол <i class="ti ti-arrow-up-right" aria-hidden="true"></i></button></div></div>
+    </section>
+
+    <section class="section reviews-section" aria-labelledby="reviews-title">
+      <div class="container reviews-layout"><div class="reviews-summary"><h2 id="reviews-title">Отзывы</h2><div class="rating">4.9 <span>★</span></div><p>на основе 241 отзыва</p></div>
+        <div class="reviews-window" aria-live="polite"><div class="reviews-track" id="reviews-track"></div></div>
+        <div class="reviews-controls"><button type="button" id="review-prev" aria-label="Предыдущие отзывы"><i class="ti ti-chevron-left" aria-hidden="true"></i></button><button type="button" id="review-next" aria-label="Следующие отзывы"><i class="ti ti-chevron-right" aria-hidden="true"></i></button></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contacts"><div class="container footer-grid"><a class="brand" href="#top">Bistro 47</a><div class="footer-item"><i class="ti ti-map-pin" aria-hidden="true"></i><span>Москва,<br>ул. Тверская, 47</span></div><a class="footer-item" href="tel:+74951234567"><i class="ti ti-phone" aria-hidden="true"></i><span>+7 (495) 123-45-67</span></a><a class="footer-item" href="mailto:info@bistro47.ru"><i class="ti ti-mail" aria-hidden="true"></i><span>info@bistro47.ru</span></a><div class="socials"><span aria-label="Instagram"><i class="ti ti-brand-instagram" aria-hidden="true"></i></span><span aria-label="Telegram"><i class="ti ti-brand-telegram" aria-hidden="true"></i></span><span aria-label="ВКонтакте"><i class="ti ti-brand-vk" aria-hidden="true"></i></span></div></div></footer>
+
+  <dialog class="modal" id="booking-dialog" aria-labelledby="booking-dialog-title"><div class="modal-head"><div><span class="eyebrow">Bistro 47</span><h2 id="booking-dialog-title">Забронировать стол</h2></div><button class="icon-button" type="button" data-close-dialog aria-label="Закрыть"><i class="ti ti-x" aria-hidden="true"></i></button></div><p class="modal-lead">Оставьте детали визита. Мы подготовим запрос на бронирование.</p><form id="booking-form"><div class="form-grid"><label>Дата<input name="date" type="date" required></label><label>Время<select name="time" required><option value="">Выберите время</option><option>12:00</option><option>13:00</option><option>14:00</option><option>15:00</option><option>16:00</option><option>17:00</option><option>18:00</option><option>19:00</option><option>20:00</option><option>21:00</option></select></label><label>Гостей<select name="guests" required><option value="">Количество гостей</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7+</option></select></label><label>Ваше имя<input name="name" type="text" autocomplete="name" placeholder="Как к вам обращаться" required></label><label class="full">Телефон<input name="phone" type="tel" autocomplete="tel" placeholder="+7 (999) 000-00-00" required></label></div><button class="button button-light form-submit" type="submit">Подготовить запрос <i class="ti ti-arrow-up-right" aria-hidden="true"></i></button></form><div class="booking-result" id="booking-result" hidden></div></dialog>
+
+  <dialog class="modal menu-dialog" id="menu-dialog" aria-labelledby="menu-dialog-title"><div class="modal-head"><div><span class="eyebrow">Bistro 47</span><h2 id="menu-dialog-title">Меню</h2></div><button class="icon-button" type="button" data-close-dialog aria-label="Закрыть"><i class="ti ti-x" aria-hidden="true"></i></button></div><div class="menu-tabs" role="tablist" aria-label="Разделы меню"><button type="button" role="tab" data-tab="main">Основные блюда</button><button type="button" role="tab" data-tab="pasta">Паста</button><button type="button" role="tab" data-tab="dessert">Десерты</button></div><div id="menu-panel" role="tabpanel"></div></dialog>
+
+  <dialog class="gallery-dialog" id="gallery-dialog" aria-label="Галерея Bistro 47"><button class="icon-button gallery-close" type="button" data-close-dialog aria-label="Закрыть"><i class="ti ti-x" aria-hidden="true"></i></button><button class="gallery-arrow prev" type="button" id="gallery-prev" aria-label="Предыдущее фото"><i class="ti ti-chevron-left" aria-hidden="true"></i></button><img id="gallery-large" src="assets/bar.jpg" alt=""><button class="gallery-arrow next" type="button" id="gallery-next" aria-label="Следующее фото"><i class="ti ti-chevron-right" aria-hidden="true"></i></button><div class="gallery-count" id="gallery-count"></div></dialog>
+</body>
+</html>
