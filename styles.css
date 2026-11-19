@@ -53,3 +53,25 @@
   .site-footer { padding: 44px 0 52px; }
   .footer-item { font-size: 13px; }
 }
+
+.developer-credit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 32px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 13px;
+}
+.developer-credit a {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  opacity: .86;
+  transition: opacity .18s ease;
+}
+.developer-credit a:hover,
+.developer-credit a:focus-visible { opacity: 1; }
+.developer-credit img { width: 136px; height: auto; }
